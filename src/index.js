@@ -1,4 +1,8 @@
 import './styles/main.scss';
 //import 'bootstrap';
+import Vue from 'vue';
+import App from './app/App.vue';
 
-console.log("hello tremun");
+new Vue({
+    render: h => h(App)
+}).$mount('#app');

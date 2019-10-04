@@ -6,9 +6,6 @@ body {
     }
 }
 
-//1
-//navbar
-
 nav {
     top: 0px;
     left: 0px;
@@ -113,3 +110,176 @@ div.home {
         }
     }
 }
+div.fila{
+    height: 39.0625rem;
+}
+div.openSpaceL{
+    background: #D8FFF7 0% 0% no-repeat padding-box;
+    opacity: 0.5;
+}
+div.openSpaceR{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 0.5;
+}
+div.titulo{
+    margin-top:2.6875rem;
+    justify-content: center;
+    p{
+        font-family: Lato;
+        font-size: calc(2em + 0.4vh);
+        font-weight: 300;
+        text-align: center;
+        letter-spacing: 0;
+        color: #484848;
+        opacity: 1;
+    }
+}
+div.filaTarjeta{
+    margin-top: 1.395625rem;
+    height: 4.666875rem;
+    justify-content: center
+}
+div.columnaTarjeta{
+    background: #DBFFF8 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+}
+p.infoTarjeta{
+    text-align: left;
+    font-family: Lato;
+    font-size: calc(0.6em + 0.4vh);
+    letter-spacing: 0;
+    color: #484848;
+    opacity: 1;
+    margin: -0.5rem;
+    padding-left: 2rem;
+}
+div.colNum{
+    margin:-0.9375rem;
+    height: 4.666875rem;
+    background: #B1FDEF 0% 0% no-repeat padding-box;
+    border-radius: 8px 0px 0px 8px;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p.pasos{
+    font-family: Helvetica;
+    font-size: 1.25rem;
+    text-align: left;
+    letter-spacing: 0;
+    color: #484848;
+    opacity: 1;
+    margin-bottom: 0rem;
+}
+
+
+div.filaRegistro{
+    margin-top: 2.6875rem;
+    height: 100vh;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    .row{
+        justify-content: center;
+    }
+}
+div.tituloRegistro.row{
+    margin-top: 0rem;
+}
+h3.titReg{
+
+    text-align: center;
+    font-family: Lato;
+    font-weight: 300;
+    letter-spacing: 0;
+    color: #2E0E98;
+    text-transform: uppercase;
+    opacity: 1;
+
+}
+div.descripcionRegistro{
+    margin-top: 1.625rem;
+    padding-bottom:  1.625rem;
+    p.desc{
+        text-align: center;
+        font-family: Lato;
+        letter-spacing: 0;
+        color: #898989;
+        opacity: 1;
+        width: 34.125rem;
+        height: 2.375rem;
+        font-size: calc(0.8em + 0.8vh);
+    }
+}
+
+div.checkAsistir{
+    margin-top: 1rem;
+    div.col{
+        display:flex;
+        justify-content: center;
+    }
+    div.boton{
+        height: 3rem;
+        box-shadow: 0px 3px 6px #0000003D;
+        border-radius: 8px 0px 0px 8px;
+        opacity: 1;
+        display:flex;
+        justify-content: center;
+    }
+    label.oyente{
+        width: 15rem;
+        padding: 0.75rem;
+        border: 0.0625rem solid #2E0E98;
+        color: #2E0E98;
+        font-size: calc(0.5em + 1.2vh);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    label.oyente:hover{
+        background: #2E0E98;
+        color:#FFFFFF;
+    }
+    label.expositor{
+        width: 15rem;
+        padding: 0.75rem;
+        border: 0.0625rem solid #2E0E98;
+        color: #2E0E98;
+        font-size: calc(0.5em + 1.2vh);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    label.expositor:hover{
+        background: #2E0E98;
+        color:#FFFFFF;
+    }
+}
+div.formulario{
+    margin-top: 3rem;
+    margin-bottom: 5.22375rem;
+    label{
+        text-align: left;
+        font-family: Lato;
+        letter-spacing: 0;
+        color: #484848;
+        opacity: 1;
+    }
+    input{
+        border: 0.0625rem solid #BCBCBC;
+        border-radius: 4px;
+        opacity: 1;
+    }
+}
+button.btnEnviar{
+    margin-top: 2.4375rem;
+    background: #2E0E98;
+    border-radius: 4px;
+    border: 0.0625rem solid #2E0E98;
+    opacity: 1;
+    font-family: Lato;
+}
+
