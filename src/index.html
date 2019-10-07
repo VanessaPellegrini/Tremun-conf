@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.scss" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- home -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
             aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,38 +63,120 @@
             </p>
         </div>
     </div>
-    <!-- openSpace -->
-    <!-- programacion -->
-    <!-- form -->
-    <div class="form">
-        <div class="title">
-            <p>INSCRÍBETE</p>
-            <p>Si tienes las ganas de compartir tus conocimientos, exponerlos a los asistentes o simplemente participar
-                de las charlas como oyente</p>
-            <div class="btn-box">
-                <a href="">Quiero asistir como oyente</a>
-                <a href="">Quiero dar una charla</a>
+    <div class="container-fluid">
+        <div class="fila row">
+            <div class="openSpaceL col-lg">
+                <div>
+                    <img src="../src/images/Logo/open_space_logo.svg" alt="">
+                </div>
+                <div>
+                    <p>Es una conferencia donde tú como involucrado decides qué quieres hablar y cuándo.</p>
+                    <p>El foco son las diversas discusiones que se puedan tener.</p>
+                </div>
+                <div>
+                    <img src="../src/images/Textura/bg_puntos_purpura.svg" alt="">
+                </div>
             </div>
-            <div class="form-01">
-                <form>
-                    <div class="form-group">
-                        <label for="formGroupExampleInput">Example label</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+            <div class="openSpaceR col-lg">
+                <div class="titulo row">
+                    <p>¿Cómo funciona?</p>
+                </div>
+                <div class="filaTarjeta row">
+                    <div class="columnaTarjeta col-sm-6 shadow-sm p-3 rouded">
+                        <div class="colNum col-2">
+                            <div class="row">
+                                <p class="pasos">1</p>
+                            </div>
+                        </div>
+                        <p class="infoTarjeta">Los asistentes participan sentados en círculo.</p>
                     </div>
-                    <div class="form-group">
-                        <label for="formGroupExampleInput2">Another label</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                </div>
+                <div class="filaTarjeta row">
+                    <div class="columnaTarjeta col-sm-6 shadow-sm p-3 rouded">
+                        <div class="colNum col-2">
+                            <div class="row">
+                                <p class="pasos">2</p>
+                            </div>
+                        </div>
+                        <p class="infoTarjeta">El organizador comienza un tema.</p>
                     </div>
-                </form>
+                </div>
+                <div class="filaTarjeta row">
+
+                    <div class="columnaTarjeta col-sm-6 shadow-sm p-3 rouded">
+                        <div class="colNum col-2">
+                            <div class="row">
+                                <p class="pasos">3</p>
+                            </div>
+                        </div>
+                        <p class="infoTarjeta">Uno por uno los participantes van al centro del círculo, escriben un tema
+                            para discusión, anuncian al grupo y se registra en la agenda.</p>
+                    </div>
+                </div>
+                <div class="filaTarjeta row">
+                    <div class="columnaTarjeta col-sm-6 shadow-sm p-3 rouded">
+                        <div class="colNum col-2">
+                            <div class="row">
+                                <p class="pasos">4</p>
+                            </div>
+                        </div>
+                        <p class="infoTarjeta">Los participantes van a la sesión que le gustaría asistir.</p>
+                    </div>
+
+                </div>
+                <div class="filaTarjeta row">
+
+                    <div class="columnaTarjeta col-sm-6 shadow-sm p-3 rouded">
+                        <div class="colNum col-2">
+                            <div class="row">
+                                <p class="pasos">5</p>
+                            </div>
+                        </div>
+                        <p class="infoTarjeta">Los participantes pueden cambiar de sesión o tener un descanso en
+                            cualquier momento.</p>
+                    </div>
+
+                </div>
             </div>
-            <div class="form-02">
+        </div>
+    </div>
+    <div class="prueba">
+        <div id="app"></div>
+    </div>
+    <footer>
+        <div class="redes-s">
+            <p class="text-center">Síguenos en redes sociales</p>
+            <div class="container">
+                <div class="row center">
+                    <div class="col-sm-6 text-right">
+                        <a href="https://twitter.com/cultechgroup" target="_blank">
+                            <img src="../src/images/Logo/twitter.svg" alt="">
+                        </a>
+                        <a href="https://twitter.com/cultechgroup" target="_blank">
+                            <img src="../src/images/Logo/twitter.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 text-left">
+                        <a href="https://twitter.com/cultechgroup" target="_blank">
+                            <img src="../src/images/Logo/twitter.svg" alt="">
+                        </a>
+                        <a href="https://twitter.com/cultechgroup" target="_blank">
+                            <img src="../src/images/Logo/twitter.svg" alt="">
+                        </a>
+                    </div>
+                </div>
 
             </div>
         </div>
-
-    </div>
-    <!-- equipo -->
-    <!-- footer -->
+        <div class="diseno row">
+            <div clas=" col-sm-6 ">
+                <p class="f-di">Diseño: Fernando Nova (@rayomental) | Departamento UX Telefónica Chile</p>
+            </div>
+            <div class="col-sm-6">
+                <p class=" f-logo">2019 | <img src="../src/images/Logo/cultech_logo.svg" alt=""></p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
