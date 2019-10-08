@@ -1,126 +1,41 @@
 @import "../../node_modules//bootstrap/dist/css/bootstrap.min.css";
+@import "./variables.scss";
+@import "./mixin.scss";
+@import "./nav-header.scss";
+@import "./open-space.scss";
+@import "./form.scss";
+@import "./footer.scss";
 
 html {
   min-height: 100%;
   position: relative;
+  font-family: "Lato", sans-serif;
 }
 
-body {
-  p {
-    font-family: "Lato", sans-serif;
-  }
-}
-
-nav {
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 80px;
-  background: transparent linear-gradient(94deg, #2e0e98 0%, #240a79 100%) 0% 0% no-repeat padding-box;
-  box-shadow: 0px 6px 12px #00000029;
-  opacity: 1;
-  border-bottom: 1px solid #2ce5c1;
-}
-
-a {
-  color: #2ce5c1;
-}
-
-div.home {
-  height: 100vh;
-  width: 100%;
-  background-image: url("../images/header/Grupo_9399_A0_Group_146_pattern.png"),
-    url("../images/header/Grupo_9405_A0_Group_147_pattern.png"),
-    url("../images/header/Grupo_9411_A0_Group_149_pattern.png"),
-    url("../images/header/Grupo_9413_A0_Group_150_pattern.png"),
-    url("../images/header/Grupo_9416_A0_Group_151_pattern.png"),
-    url("../images/header/Grupo_9421_A0_Group_152_pattern.png"),
-    url("../images/header/Grupo_9423_A0_Group_153_pattern.png"),
-    url("../images/header/Grupo_9426_A0_Group_154_pattern.png"),
-    url("../images/header/Grupo_9428_A0_Group_155_pattern.png"),
-    url("../images/header/Grupo_9430_A0_Group_156_pattern.png"),
-    url("../images/header/Grupo_9433_A0_Group_157_pattern.png"),
-    url("../images/header/Grupo_9435_A0_Group_158_pattern.png"),
-    url("../images/header/Grupo_9437_A0_Group_159_pattern.png"),
-    url("../images/header/Grupo_9440_A0_Group_160_pattern.png"),
-    url("../images/header/Grupo_9445_A0_Group_161_pattern.png"), url("../images/header/Rectángulo\ 299.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: #2e0e98;
-
-  div.logo-box {
-    position: relative;
-    top: 181px;
-    div.logo-1 {
-      img {
-        height: 267px;
-      }
-    }
-
-    div.logo-2 {
-      border-left: 1px solid #fff;
-      height: 142px;
-      position: relative;
-      top: 148px;
-      p {
-        color: #fff;
-      }
-      p:nth-child(1) {
-        font-family: "Lato", sans-serif;
-        font-weight: 700;
-        font-size: 24px;
-      }
-      p:nth-child(2) {
-        font-family: "Lato", sans-serif;
-        font-size: 20px;
-        font-weight: 300;
-      }
-
-      a {
-        top: 411px;
-        left: 748px;
-        width: 200px;
-        height: 40px;
-        background: #ffffff 0% 0% no-repeat padding-box;
-        border-radius: 50px;
-        opacity: 1;
-        color: #2e0e98;
-      }
-    }
-  }
-
-  div.text-box {
-    position: relative;
-    top: 27rem;
-    left: 0px;
-    width: 875px;
-    height: 19px;
-    text-align: left;
-    font-family: "Lato", sans-serif;
-    letter-spacing: 0.8px;
-    color: #ffffff;
-    font-weight: 300;
-
-    p {
-      color: #fff;
-      font-size: 1rem;
-      span {
-        font-weight: 700;
-      }
-    }
-  }
-}
 div.fila {
   height: 39.0625rem;
 }
 div.openSpaceL {
   background: #d8fff7 0% 0% no-repeat padding-box;
   opacity: 0.5;
+  .logo-open{
+    padding-top: 185px;
+    padding-left: 235px;
+  }
+  div{
+    p{
+      padding-top:32px;
+    }
+  }
+  .texture-open{
+    position: absolute;
+    bottom: 0;
+  }
 }
 div.openSpaceR {
   background: #ffffff 0% 0% no-repeat padding-box;
   opacity: 0.5;
+
 }
 div.titulo {
   margin-top: 2.6875rem;
@@ -282,47 +197,4 @@ button.btnEnviar {
 }
 
 
-footer {
-  height: 260px;
-  width: 100%;
-  .redes-s {
-    width: 100%;
-    height: 176px;
-    background: #F4F4F4;
-    p{
-        padding-top: 30px;
-        font-weight: 300;
-        font-size: 14px;
-    }
-    img {
-      width: 60px;
-      height: 37px;
-    }
-  }
-  .diseno {
-    background-color: #2e0e98;
-    background-image: url('../images/Textura/bg_color_gradient.png');
-    position: absolute;
-    bottom: 0;
-    height: 85px;
-    color: white;
-    width: 100vw;
-    .f-di {
-        padding-left: 105px;
-        padding-top: 30px;
-        font-weight: 300;
-        font-family: Lato;
-        font-size: 14px;
-        margin: 0;
-        opacity: 0.5;
-    }
-    .f-logo {
-        padding-top: 10px;
-        float: right;
-        font-family: Lato;
-        font-size: 14px;
-        margin: 0;
-        opacity: 0.5;
-    }
-  }
-}
+
