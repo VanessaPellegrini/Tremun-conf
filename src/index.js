@@ -1,8 +1,12 @@
 import './styles/main.scss';
-//import 'bootstrap';
-import Vue from 'vue';
-import App from './app/App.vue';
+import $ from 'jquery';
+window.jQuery = $;
+window.$ = $;
 
-new Vue({
-    render: h => h(App)
-}).$mount('#app');
+
+function toggleDivs($show, $hide) {
+    $show.toggle();
+    $hide.hide();
+}
+$("#oyente").on("click", function() { toggleDivs($("#b-div"), $("#a-div")); });
+$("#expositor").on("click", function() { toggleDivs($("#a-div"), $("#b-div")); });
