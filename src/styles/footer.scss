@@ -1,47 +1,72 @@
 footer {
-    height: 260px;
+  height: 260px;
+  width: 100%;
+
+  .redes-s {
     width: 100%;
-    .redes-s {
-      width: 100%;
-      height: 176px;
-      background: #F4F4F4;
-      a{
-        text-decoration: none;
-      }
-      p{
-          padding-top: 30px;
-          font-weight: 300;
-          font-size: 14px;
-      }
-      img {
-        width: 60px;
-        height: 37px;
-      }
+    height: 176px;
+    background: #F4F4F4;
+
+    a {
+      text-decoration: none;
     }
-    .diseno {
-      background-color: #2e0e98;
-      background-image: url('../images/Textura/bg_color_gradient.png');
-      position: absolute;
-      bottom: 0;
-      height: 85px;
-      color: white;
-      width: 100vw;
-      .f-di {
-          padding-left: 105px;
-          padding-top: 30px;
-          font-weight: 300;
-          font-family: Lato;
-          font-size: 14px;
-          margin: 0;
-          opacity: 0.5;
-      }
-      .f-logo {
-          padding-top: 10px;
-          float: right;
-          font-family: Lato;
-          font-size: 14px;
-          margin: 0;
-          opacity: 0.5;
+
+    p {
+      padding-top: 30px;
+      font-weight: 300;
+      font-size: 14px;
+    }
+
+    img {
+      width: 60px;
+      height: 37px;
+    }
+  }
+
+  .diseno {
+    background-color: #2e0e98;
+    background-image: url('../images/Textura/bg_color_gradient.png');
+    position: absolute;
+    bottom: 0;
+    height: 5.3125rem;
+    color: white;
+    width: 100%;
+
+    .f-di {
+      padding-left: 105px;
+      padding-top: 30px;
+      font-weight: 300;
+      font-family: Lato;
+      font-size: 14px;
+      margin: 0;
+      opacity: 0.5;
+    }
+
+    .f-logo {
+      padding-top: 10px;
+      float: right;
+      font-family: Lato;
+      font-size: 14px;
+      margin: 0;
+      opacity: 0.5;
+      padding-right: 50px;
+      img{
+        width: 150px;
       }
     }
   }
+}
+
+@media (max-width: 700px) {
+  .diseno{
+    height: 15vh!important;
+    .f-logo{
+      float:unset!important;
+      img{
+        width:100px;
+        position: relative;
+        top: -7px;
+      }
+    }
+  }
+}

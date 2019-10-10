@@ -1,8 +1,8 @@
 .hideDiv { display:none; }
 
 
-button:focus, button:active, button:hover {
-    color: #fff;
+button:focus, button:active {
+    color: #fff!important;
     background-color: #2e0e98!important;
     border-color: #2e0e98!important;
     outline: none!important;
@@ -60,7 +60,7 @@ div.filaRegistro {
       display: flex;
       justify-content: center;
     }
-    label.oyente {
+    button.oyente, button.expositor {
       width: 15rem;
       padding: 0.75rem;
       border: 0.0625rem solid #2e0e98;
@@ -69,24 +69,10 @@ div.filaRegistro {
       display: flex;
       align-items: center;
       justify-content: center;
-    }
-    label.oyente:hover {
-      background: #2e0e98;
-      color: #ffffff;
-    }
-    label.expositor {
-      width: 15rem;
-      padding: 0.75rem;
-      border: 0.0625rem solid #2e0e98;
-      color: #2e0e98;
-      font-size: calc(0.5em + 1.2vh);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    label.expositor:hover {
-      background: #2e0e98;
-      color: #ffffff;
+      &:hover{
+        background: #2e0e98;
+        color: #ffffff;
+      }
     }
   }
   

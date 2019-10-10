@@ -38,10 +38,13 @@ div.home {
 
   div.logo-box {
     padding-top: 6rem;
+
     div.logo-1 {
       padding-left: 3rem;
+
       img {
         height: 16.6875rem;
+        width: 100%;
       }
     }
 
@@ -50,14 +53,17 @@ div.home {
       height: 8.875rem;
       position: relative;
       top: 9.25rem;
+
       p {
         color: #fff;
       }
+
       p:nth-child(1) {
         font-family: "Lato", sans-serif;
         font-weight: 700;
         font-size: 1.5rem;
       }
+
       p:nth-child(2) {
         font-family: "Lato", sans-serif;
         font-size: 1.25rem;
@@ -80,7 +86,7 @@ div.home {
   div.text-box {
     padding-top: 3.8rem;
     left: 0px;
-    width: 54.6875rem;
+    width: 100%;;
     height: 1.1875rem;
     text-align: left;
     font-family: "Lato", sans-serif;
@@ -91,9 +97,24 @@ div.home {
     p {
       color: #fff;
       font-size: 1rem;
+
       span {
         font-weight: 700;
       }
     }
+  }
+}
+
+@media (max-width: 700px) {
+  div.home div.logo-box div.logo-1{
+    padding:0!important;
+  }
+  .text-box-top{
+    margin-top:25px;
+    padding-top:25px;
+    border-top:1px solid #fff;
+    top:0!important;
+    text-align: center!important;
+    border-left: unset!important;
   }
 }
