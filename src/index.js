@@ -15,3 +15,7 @@ $("#oyente").on("click", function () {
 $("#expositor").on("click", function () {
     toggleDivs($("#a-div"), $("#b-div"));
 });
+
+$(function(){
+    $('#oyente').click();
+ });

@@ -17,5 +17,24 @@ img{
 }
 
 
+@media only (max-width: 414px)  {
+  div.home div.logo-box {
+    padding-top: 3rem;
+}
+  div.logo-box img{
+    height: unset!important;
+    width:300px!important;
+  }
+  div.home div.text-box{
+    padding: 30px 30px 70px 30px!important;
+  }
+  div.descripcionRegistro{
+    padding-bottom: 3.625rem!important;
+  }
+  #oyente, #expositor{
+    font-size: 14px;
+  }
+}
+
 
 
