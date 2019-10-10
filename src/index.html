@@ -11,17 +11,17 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+    <nav class="navbar justify-content-lg-between navbar-expand-md navbar-dark bg-light sticky-top">
+        <!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
             aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> -->
         <div class="">
             <a class="navbar-brand" href="#">
                 <img src="../src/images/Logo/cultech_logo.svg" alt="">
             </a>
         </div>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
+        <div class="justify-content-end" id="navbarTogglerDemo01">
             <ul class="nav justify-content-end">
                 <li class="nav-item">
                     <a class="nav-link" href="#openSpace">Open Space</a>
@@ -39,7 +39,7 @@
                     <img class="" src="../src/images/logo/logo_tremun.svg" alt="">
                 </div>
                 <div class="logo-2 col-lg-6 col-sm-12 text-box-top">
-                    <div class="container ">
+                    <div class="container top-text">
                         <p>Lunes 28 octubre | 9:30 - 18:00 hrs.</p>
                         <p>Edificio Telefónica | Salas B y C</p>
                         <a href="" class="btn">Inscríbete</a>
@@ -51,7 +51,8 @@
             <p>
                 <span>Tremün, crecer en Mapudungun,</span> es el nombre de nuestro evento que invita a compartir el
                 conocimiento y a
-                trabajar de forma más colaborativa. Nuestro objetivo principal es generar un espacio donde, a través de
+                trabajar de forma más colaborativa. Nuestro objetivo principal es generar un espacio donde, a través
+                de
                 una conferencia abierta bajo el formato OpenSpace, podamos crecer de forma profesional y personal,
                 construyendo un ambiente más humano, social y comunitario.
             </p>
@@ -64,16 +65,20 @@
                     <img src="../src/images/Logo/open_space_logo.svg" alt="">
                 </div>
                 <div class="text-center">
-                    <p>Es una conferencia donde tú como involucrado decides qué quieres hablar y cuándo.El foco son las
+                    <p>Es una conferencia donde tú como involucrado decides qué quieres hablar y cuándo.El foco son
+                        las
                         diversas discusiones que se puedan tener.</p>
                 </div>
                 <div class="texture-open d-none d-lg-block d-sm-none">
                     <img src="../src/images/Textura/bg_puntos_purpura.svg" alt="">
                 </div>
             </div>
-            <div class="openSpaceR col-lg">
-                <div class="titulo row">
+            <div class="openSpaceR">
+                <div class="titulo">
                     <p>¿Cómo funciona?</p>
+                </div>
+                <div class="row">
+
                 </div>
                 <div class="filaTarjeta row">
                     <div class="columnaTarjeta col-sm-6 shadow-sm p-3 rouded">
@@ -103,7 +108,8 @@
                                 <p class="pasos">3</p>
                             </div>
                         </div>
-                        <p class="infoTarjeta">Uno por uno los participantes van al centro del círculo, escriben un tema
+                        <p class="infoTarjeta">Uno por uno los participantes van al centro del círculo, escriben un
+                            tema
                             para discusión, anuncian al grupo y se registra en la agenda.</p>
                     </div>
                 </div>
@@ -148,8 +154,7 @@
                     <div class="checkAsistir row">
                         <div class="col-lg-6">
                             <div class="boton btn-group btn-group-toggle">
-                                <button id="oyente" class="oyente btn btn-outline-primary">Quiero asistir como
-                                    oyente</button>
+                                <button id="oyente" class="oyente btn btn-outline-primary">Quiero asistir</button>
                                 <button id="expositor" class="expositor btn btn-outline-primary">Quiero dar una
                                     charla</button>
                             </div>
@@ -162,6 +167,11 @@
                                     <label>Nombre</label>
                                     <input type="text" class="form-control" id="nombre"
                                         placeholder="¿Cuál es tu nombre?" />
+                                </div>
+                                <div class="form-group">
+                                    <label>Empresa</label>
+                                    <input type="text" class="form-control" id="nombre"
+                                        placeholder="¿Cuál es tu empresa?" />
                                 </div>
                                 <div class="form-group">
                                     <label>Nombre de la charla</label>
@@ -183,28 +193,21 @@
                                     <input class="form-check-input" type="radio" name="exampleRadios"
                                         id="exampleRadios1" value="option1" checked>
                                     <label class="form-check-label" for="exampleRadios1">
-                                        Default radio
+                                        Mesa
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="exampleRadios"
                                         id="exampleRadios1" value="option1" checked>
                                     <label class="form-check-label" for="exampleRadios1">
-                                        Default radio
+                                        Proyector
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="exampleRadios"
                                         id="exampleRadios1" value="option1" checked>
                                     <label class="form-check-label" for="exampleRadios1">
-                                        Default radio
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="exampleRadios"
-                                        id="exampleRadios1" value="option1" checked>
-                                    <label class="form-check-label" for="exampleRadios1">
-                                        Default radio
+                                        Pizarra
                                     </label>
                                 </div>
                                 <div class="input-group">
@@ -227,10 +230,7 @@
                                 </div>
                                 <button type="submit" class="btnEnviar btn btn-primary btn-block">Enviar</button>
                             </div>
-                            <div class="form-group">
-                                <label>Empresa</label>
-                                <input type="text" class="form-control" id="nombre" placeholder="¿Cuál es tu nombre?" />
-                            </div>
+
                         </div>
                     </div>
                     <div class="container hideDiv pt-3" id="b-div">
@@ -267,37 +267,41 @@
     <footer>
         <div class="redes-s">
             <p class="text-center">Síguenos en redes sociales</p>
-            <div class="container">
-                <div class="row center">
-                    <div class="col-lg-6 text-right">
-                        <a href="https://telefonica.facebook.com/groups/2591197517559280/" target="_blank">
-                            <img src="../src/images/Logo/workplace.svg" alt="">
-                        </a>
-                        <a href="https://twitter.com/cultechgroup" target="_blank">
-                            <img src="../src/images/Logo/twitter.svg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-6 col-sm-12 text-left">
-                        <a href="https://twitter.com/cultechgroup" target="_blank">
-                            <img src="../src/images/Logo/youtube.svg" alt="">
-                        </a>
-                        <a href="https://twitter.com/cultechgroup" target="_blank">
-                            <img src="../src/images/Logo/instagram.svg" alt="">
-                        </a>
-                    </div>
+            <div class="">
+                <div class="redes-s-box d-flex justify-content-center">
+                    <a href="https://telefonica.facebook.com/groups/2591197517559280/" target="_blank">
+                        <img src="../src/images/Logo/workplace.svg" alt="">
+                    </a>
+                    <a href="https://twitter.com/cultechgroup" target="_blank">
+                        <img src="../src/images/Logo/twitter.svg" alt="">
+                    </a>
+                    <a href="https://twitter.com/cultechgroup" target="_blank">
+                        <img src="../src/images/Logo/youtube.svg" alt="">
+                    </a>
+                    <a href="https://twitter.com/cultechgroup" target="_blank">
+                        <img src="../src/images/Logo/instagram.svg" alt="">
+                    </a>
                 </div>
-
             </div>
+
+        </div>
         </div>
         <div class="diseno d-flex justify-content-lg-between align-content-sm-center">
-            <div clas="">
-                <p class="f-di">Diseño: Fernando Nova (@rayomental) | Departamento UX Telefónica Chile</p>
-            </div>
-            <div class="f-logo" >
+            <p class="f-di d-none d-lg-block d-xl-block">Diseño: Fernando Nova (@rayomental) | Departamento UX Telefónica Chile</p>
+            <div class="f-logo d-flex justify-content-sm-center">
                 <p class=" ">2019 | <img src="../src/images/Logo/cultech_logo.svg" alt=""></p>
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

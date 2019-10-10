@@ -58,14 +58,35 @@ footer {
 }
 
 @media (max-width: 700px) {
-  .diseno{
+  footer{
+    div.redes-s{
+
+    }
+    div.diseno{
+      height: 15vh!important;
+      .f-logo{
+        float:unset!important;
+        padding-top: 30px;
+        padding-left: 37%;
+        img{
+          width:100px;
+          position: relative;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 701px)  {
+  div.diseno{
     height: 15vh!important;
     .f-logo{
       float:unset!important;
+      padding-top: 30px;
+      padding-left: 40%;
       img{
         width:100px;
         position: relative;
-        top: -7px;
       }
     }
   }

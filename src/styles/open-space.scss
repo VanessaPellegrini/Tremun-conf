@@ -1,11 +1,100 @@
+div.fila {
+    height: 100%;
+  }
+  div.openSpaceL {
+    background: hsl(168, 100%, 92%) 0% 0% no-repeat padding-box;
+    opacity: 0.5;
+    .logo-open{
+      padding-top: 185px;
+      img{
+          width:300px;
+      }
+    }
+    div{
+      p{
+        padding-top:32px;
+      }
+    }
+    .texture-open{
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  div.openSpaceR {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    opacity: 0.5;
+    padding-bottom: 28px;
+  
+  }
+  div.titulo {
+    padding-top: 2.7rem;
+    justify-content: center;
+    p {
+      font-family: Lato;
+      font-size: calc(2em + 0.4vh);
+      font-weight: 300;
+      text-align: center;
+      letter-spacing: 0;
+      color: #484848;
+      opacity: 1;
+    }
+  }
+  div.filaTarjeta {
+    margin-top: 1.395625rem;
+    height: 4.666875rem;
+    justify-content: center;
+  }
+  div.columnaTarjeta {
+    background: #dbfff8 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+  }
+  p.infoTarjeta {
+    text-align: left;
+    font-family: Lato;
+    font-size: calc(0.6em + 0.4vh);
+    letter-spacing: 0;
+    color: #484848;
+    opacity: 1;
+    margin: -0.5rem;
+    padding-left: 2rem;
+  }
+  div.colNum {
+    margin: -0.9375rem;
+    height: 4.666875rem;
+    background: #b1fdef 0% 0% no-repeat padding-box;
+    border-radius: 8px 0px 0px 8px;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  p.pasos {
+    font-family: Helvetica;
+    font-size: 1.25rem;
+    text-align: left;
+    letter-spacing: 0;
+    color: #484848;
+    opacity: 1;
+    margin-bottom: 0rem;
+  }
+
+
 @media (max-width: 700px) {
     .openSpaceL{
         padding-top:50px;
     }
     .logo-open{
         padding:0!important;
+        justify-content: center;
         img{
             width:200px;
         }
     }
+    div.openSpaceR{
+        padding: 0 52px 30px 52px;
+    }
+
 }
