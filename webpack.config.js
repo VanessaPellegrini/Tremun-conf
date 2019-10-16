@@ -1,6 +1,5 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = {
 
@@ -34,10 +33,6 @@ module.exports = {
                     'css-loader',
                     'sass-loader'
                 ]
-            },
-            {
-                test: /\.vue$/,
-                loader: 'vue-loader'
             }
         ]
     },
@@ -49,7 +44,6 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: "[name].css",
             chunkFilename: "[id].css"
-        }),
-        new VueLoaderPlugin()
+        })
     ]
 }

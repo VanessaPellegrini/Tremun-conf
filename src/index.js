@@ -1,9 +1,8 @@
 import './styles/main.scss';
 import $ from 'jquery';
-//import '../node_modules/bootstrap/js/dist/*';
+import 'bootstrap/js/dist/dropdown';
 window.jQuery = $;
 window.$ = $;
-
 
 function toggleDivs($show, $hide) {
     $show.toggle();
