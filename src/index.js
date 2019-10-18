@@ -1,6 +1,5 @@
 import './styles/main.scss';
-import $ from 'jquery';
-import 'bootstrap/js/dist/dropdown';
+import $ from 'jQuery';
 window.jQuery = $;
 window.$ = $;
 
@@ -15,6 +14,6 @@ $("#expositor").on("click", function () {
     toggleDivs($("#a-div"), $("#b-div"));
 });
 
-$(function(){
+$(function () {
     $('#oyente').click();
- });
+});
